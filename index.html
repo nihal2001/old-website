@@ -11,20 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   </head>
 
+  <script src="js/main.js">
+</script>
+
   <body>
 
-    <div class="container">
+    <button class="tablink" onclick="openPage('digitalWriting', this, 'blue')">Digital Writing</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')"id="defaultOpen">About</button>
 
-      <header>
-        <div class="wrapper">
-          <h1>Nihal Mitta</h1>
-            <p class="bio"> The Wesbite of Nihal Mitta.
-            </p>
-          <div class="buttonBox">
-            <a class="myButton" href="#projects">Go</a>
-          </div>
-        </div>
-      </header>
+    <div id="digitalWriting" class="tabcontent">
 
       <main id="projects">
         <div class="project">
@@ -57,6 +52,12 @@
       </footer>
 
     </div>
+
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
   </body>
+  
 
 </html>
